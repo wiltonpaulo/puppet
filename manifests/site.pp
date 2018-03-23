@@ -12,5 +12,13 @@ node 'admin', 'puppet', 'sites' {    # applies to ns1 and ns2 nodes
     content => "agora vai\n",
   }
 }
+node 'test1', 'test2' {    # applies to ns1 and ns2 nodes
+  file {'/tmp/dns':    # resource type file and filename
+    ensure => present, # make sure it exists
+    mode => '0644',
+    content => "agora test vai\n",
+  }
+}
+
 
 node default {}       # applies to nodes that aren't explicitly defined
