@@ -1,4 +1,4 @@
-node 'hub', cloud1, {    # applies to ns1 and ns2 nodes
+node 'hub', cloud1, cloud2, {    # applies to ns1 and ns2 nodes
   file {'/tmp/dns':    # resource type file and filename
     ensure => present, # make sure it exists
     mode => '0644',
