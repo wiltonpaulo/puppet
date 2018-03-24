@@ -1,0 +1,10 @@
+#profile/manifests/lamp.pp
+class profile::lamp {
+  include mysql::server
+  include apache
+  include apache::mod::php
+
+  create_resources('mysql_database', hiera('mysql_database', {}))
+  create_resources('aoache::vhost', hiera('apache::vhost', {}))
+}
+
