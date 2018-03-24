@@ -1,0 +1,4 @@
+user:
+  auto:
+    ensure: present
+    managehome: true
