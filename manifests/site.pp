@@ -1,3 +1,4 @@
+$role= hiera('role', false)
 node default {
   if $::role {
       include "role::${::role}"
