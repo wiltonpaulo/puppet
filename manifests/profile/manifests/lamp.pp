@@ -5,6 +5,6 @@ class profile::lamp {
   include apache::mod::php
 
   create_resources('mysql_database', hiera('mysql_database', {}))
-  create_resources('aoache::vhost', hiera('apache::vhost', {}))
+  create_resources('apache::vhost', hiera('apache::vhost', {}))
 }
 
