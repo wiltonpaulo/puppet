@@ -2,6 +2,6 @@
 class profile::base {
   include ntp
   class { 'motd' :
-    content => "Host ${::fqdn}.\n\nRunning on ${::operatingsystem}",
+    content => "Host ${::fqdn}.\n\nRunning on ${::operatingsystem}\n\n",
   } 
 }
