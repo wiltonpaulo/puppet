@@ -1,3 +1,4 @@
+timezone::timezone: America/Sao_Paulo
 user:
   auto:
     ensure: present
