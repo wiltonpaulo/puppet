@@ -1,5 +1,7 @@
-#profile/manifets/base.pp
+#profile/manifests/base.pp
 class profile::base {
-	include ntp
-	include motd
+  include ntp
+  class { 'motd' :
+    content => "Host ${::fqdn}.\n\nRunning on ${::operatingsystem}",
+  } 
 }
