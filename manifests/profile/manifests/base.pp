@@ -6,4 +6,14 @@ class profile::base {
   } 
 
   create_resources('user', hiera_hash('user', {}))
+  create_resources('firewall', hiera_hash('firewall', {}))
+
+  case $::osfamily {
+    'redhat': {
+      include profile::base::redhat
+    }
+    default: {
+      fail("This profile is not supported"))
+    }
+  }
 }

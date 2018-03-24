@@ -1,0 +1,7 @@
+apache:vhost:
+  test1.tecdump.com:
+    port: 80
+    docroot: /var/www/html
+  test2.tecdump.com:
+    port: 80
+    docroot: /var/www/html
