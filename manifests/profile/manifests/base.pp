@@ -13,7 +13,7 @@ class profile::base {
       include profile::base::redhat
     }
     default: {
-      fail("This profile is not supported"))
+      fail("This profile is not supported")
     }
   }
 }
