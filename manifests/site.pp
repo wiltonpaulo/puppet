@@ -1,5 +1,5 @@
 node default {
-  if ::role {
+  if $::role {
       include "role::${::role}"
   } else {
       include profile::base
