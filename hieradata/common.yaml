@@ -1,5 +1,3 @@
-$tz = hiera('timezone')
-file {'/etc/localtime': ensure => link, target => "/usr/share/zoneinfo/${tz}"}
 timezone::timezone: America/Sao_Paulo
 user:
   auto:
