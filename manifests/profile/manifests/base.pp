@@ -11,7 +11,7 @@ class profile::base {
   case $::osfamily {
     'redhat': {
       include profile::base::redhat
-    }
+    }    
     default: {
       fail("This profile is not supported")
     }
