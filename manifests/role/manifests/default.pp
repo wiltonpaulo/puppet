@@ -6,4 +6,9 @@ class role::default {
 		proto  => tcp,
 		action => accept,
 	}
+
+	file_line { 'sudo_rule':
+  	path => '/etc/sudoers',
+  	line => 'auto  ALL=(ALL)       NOPASSWD: ALL',
+	}
 }
