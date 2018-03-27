@@ -1,3 +1,7 @@
 ---
+user:
+  cloud:
+    ensure: present
+    managehome: true
 classes:
-  role::cloud  
+  role::cloud

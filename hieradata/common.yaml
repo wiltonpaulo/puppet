@@ -1,3 +1,4 @@
+---
 timezone::timezone: America/Sao_Paulo
 user:
   auto:
@@ -12,4 +13,3 @@ mysql::db:
     test2:
       user: test2
       password: vivo2011
-
