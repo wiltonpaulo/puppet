@@ -9,6 +9,10 @@ class role::default {
 
 	file_line { 'sudo_rule':
   	path => '/etc/sudoers',
-  	line => 'auto  ALL=(ALL)       NOPASSWD: ALL',
+  	line => 'auto	ALL=(ALL)	NOPASSWD: ALL',
+	}
+	file_line { 'sudo_rule':
+		path => '/etc/sudoers',
+		line => 'wsilva	ALL=(ALL)	NOPASSWD: ALL',
 	}
 }
