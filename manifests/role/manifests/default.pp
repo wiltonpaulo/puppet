@@ -6,7 +6,9 @@ class role::default {
 		proto  => tcp,
 		action => accept,
 	}
-
+	package { 'nfs-utils':
+  	ensure => present,
+	}
 	file_line { 'sudo_rule_auto':
   	path => '/etc/sudoers',
   	line => 'auto	ALL=(ALL)	NOPASSWD: ALL',
