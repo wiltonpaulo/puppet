@@ -1,8 +1,7 @@
 $role= hiera('role', false)
 node default {
   if $::role {
-      include "role::${::role}"
-      include profile::default
+      include "role::${::role}"      
   } else {
       include profile::base
       include profile::default
