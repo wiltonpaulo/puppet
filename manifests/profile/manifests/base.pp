@@ -1,6 +1,7 @@
 #profile/manifests/base.pp
 class profile::base {
   include ntp
+  include firewall
   class { 'motd' :
     content => "Host ${::fqdn}.\nRodando em ${::operatingsystem}\n@Tecdump\n\n",
   }
