@@ -1,9 +1,9 @@
 Package {
   allow_virtual => true,
 }
-node default {
-  hiera_include('classes')
-}
+#node default {
+#  hiera_include('classes')
+#}
 #$role=hiera('role', true)
 #node default {
 #  if $::role {
