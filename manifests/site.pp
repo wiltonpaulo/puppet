@@ -2,7 +2,7 @@ Package {
   allow_virtual => true,
 }
 node default {
-  hiera_classes('classes')
+  hiera_include('classes')
 }
 #$role=hiera('role', true)
 #node default {
