@@ -1,0 +1,17 @@
+---
+role: web
+apache:vhost:
+  test1.tecdump.com:
+    port: 80
+    docroot: /var/www/html
+  test2.tecdump.com:
+    port: 80
+    docroot: /var/www/html
+
+mysql::db:
+  test1:
+    user: test1
+    password: vivo2011
+  test2:
+    user: test2
+    password: vivo2011

@@ -1,0 +1,15 @@
+---
+timezone::timezone: America/Sao_Paulo
+user:
+  auto:
+    ensure: present
+    managehome: true
+
+
+mysql::db:
+    test1:
+      user: test1
+      password: vivo2011
+    test2:
+      user: test2
+      password: vivo2011

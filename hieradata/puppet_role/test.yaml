@@ -1,0 +1,14 @@
+---
+user:
+  cloud:
+    ensure: present
+    managehome: true
+ssh::sshd_config_match:
+  'Group n1':
+    - 'PasswordAuthentication yes'
+    - 'ChrootDirectory /'
+  'Group n2':
+    - 'PasswordAuthentication yes'
+    - 'ChrootDirectory /'
+classes:
+  role::test
